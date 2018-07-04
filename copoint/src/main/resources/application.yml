@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  datasource:
+#  https://blog.csdn.net/testcs_dn/article/details/75533784
+#  https://blog.csdn.net/cocoaxian/article/details/72235495
+    url: jdbc:mysql://127.0.0.1:3306/copoint?useUnicode=true&useSSL=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+#    https://blog.csdn.net/u013013170/article/details/79209444
+      connection-init-sql: SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci
+etherpad:
+  url: http://116.57.86.44:9001
+  apiKey: 9c28bab865e3e6c54e00cef4c79918807842df2428b7da831a82035abad7a555
